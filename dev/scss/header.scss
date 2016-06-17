@@ -1,0 +1,252 @@
+.header {
+  .container-fluid {
+    position: relative;
+    padding: 0;
+
+    .header-bg {
+      width: 100%;
+      z-index: 0;
+      display: block;
+    }
+  }
+
+  .logo,
+  .menu-btn-wrap {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 23px;
+  }
+
+  .logo {
+    left: 26px;
+    z-index: 3;
+
+    @media (max-width: $screen-xs-max) {
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  .menu-btn-wrap {
+    right: 26px;
+    z-index: 3;
+
+    &:after {
+      content: '';
+      width: 77px;
+      height: 111px;
+      background: #fff;
+      @include position(absolute,7px 0 null null);
+      top: 7px;
+      right: 0;
+    }
+
+    &:before {
+      content: '';
+      width: 77px;
+      height: 111px;
+      background: #fff;
+      @include position(absolute,0 7px null null);
+    }
+
+    .menu-btn {
+      @include position(absolute,0 0 null null);
+      z-index: 2;
+      display: block;
+      margin: 49px 30px;
+      width: 30px;
+      height: 30px;
+
+      span,
+      span:before,
+      span:after {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        transition: all 0.2s;
+        backface-visibility: hidden;
+      }
+
+      span {
+        position: relative;
+        margin: (10px * 2 / 5) 0 0;
+      }
+
+      span:before,
+      span:after {
+        position: absolute;
+        content: "";
+      }
+
+      span:before {
+        top: 13px * -2 / 5;
+      }
+
+      span:after {
+        top: 13px * 2 / 5;
+      }
+
+      &.active {
+        span {
+          background: transparent;
+          transition: 0.1s ease;
+        }
+
+        span:after {
+          transform: translate(0px, -5px) rotate(45deg);
+        }
+
+        span:before {
+          transform: translate(0px,5px) rotate(-45deg);
+        }
+      }
+
+      &:active,
+      &:focus{
+        border-color: transparent;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      &:before,
+      &:after {
+        width: 40px;
+        height: 37px;
+      }
+
+      .menu-btn {
+        margin: 17px 9px;
+      }
+    }
+  }
+}
+
+.menu {
+  position: relative;
+  z-index: 1;
+
+  li {}
+}
+
+.overlay {
+  @include position(fixed,0 null null 0);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(34,56,84,0.9);
+
+  .overlay-close {
+    width: 80px;
+    height: 80px;
+    @include position(absolute,20px 20px null null);
+    overflow: hidden;
+    border: none;
+    background: url(../img/cross.png) no-repeat center center;
+    text-indent: 200%;
+    color: transparent;
+    outline: none;
+    z-index: 100;
+  }
+
+  nav {
+    text-align: center;
+    position: relative;
+    top: 39%;
+    height: 60%;
+    font-size: 54px;
+    transform: translateY(-50%);
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      height: 100%;
+      position: relative;
+
+      li {
+        display: block;
+        height: 20%;
+        height: calc(100% / 5);
+        min-height: 54px;
+
+        a {
+          font-weight: 300;
+          display: block;
+          color: #fff;
+          -webkit-transition: color 0.2s;
+          transition: color 0.2s;
+        }
+      }
+    }
+
+    @media (max-width: $screen-md-max) {
+      font-size: 2.5em;
+    }
+  }
+}
+
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+  }
+
+  nav {
+    perspective: 1200px;
+
+    ul {
+      opacity: 0.4;
+      transform: translateY(-25%) rotateX(35deg);
+      transition: transform 0.5s, opacity 0.5s;
+    }
+  }
+
+  &.open {
+    nav ul {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
+
+  &.close {
+    nav ul {
+      transform: translateY(25%) rotateX(-35deg);
+    }
+  }
+}
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
+
+.succes-pop-up {
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  padding: 30px;
+  display: none;
+  z-index: 3;
+  box-shadow: 3px 3px 11px -1px #cacaca;
+}

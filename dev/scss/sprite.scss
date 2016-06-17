@@ -1,0 +1,265 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$-compas-name: 'Compas';
+$-compas-x: 0px;
+$-compas-y: 0px;
+$-compas-offset-x: 0px;
+$-compas-offset-y: 0px;
+$-compas-width: 81px;
+$-compas-height: 81px;
+$-compas-total-width: 297px;
+$-compas-total-height: 220px;
+$-compas-image: 'sprite.png';
+$-compas: (0px, 0px, 0px, 0px, 81px, 81px, 297px, 220px, 'sprite.png', 'Compas', );
+$-design-name: 'Design';
+$-design-x: 159px;
+$-design-y: 73px;
+$-design-offset-x: -159px;
+$-design-offset-y: -73px;
+$-design-width: 67px;
+$-design-height: 66px;
+$-design-total-width: 297px;
+$-design-total-height: 220px;
+$-design-image: 'sprite.png';
+$-design: (159px, 73px, -159px, -73px, 67px, 66px, 297px, 220px, 'sprite.png', 'Design', );
+$-engineering-name: 'Engineering';
+$-engineering-x: 81px;
+$-engineering-y: 0px;
+$-engineering-offset-x: -81px;
+$-engineering-offset-y: 0px;
+$-engineering-width: 78px;
+$-engineering-height: 77px;
+$-engineering-total-width: 297px;
+$-engineering-total-height: 220px;
+$-engineering-image: 'sprite.png';
+$-engineering: (81px, 0px, -81px, 0px, 78px, 77px, 297px, 220px, 'sprite.png', 'Engineering', );
+$-office-lamp-name: 'Office Lamp';
+$-office-lamp-x: 73px;
+$-office-lamp-y: 81px;
+$-office-lamp-offset-x: -73px;
+$-office-lamp-offset-y: -81px;
+$-office-lamp-width: 73px;
+$-office-lamp-height: 73px;
+$-office-lamp-total-width: 297px;
+$-office-lamp-total-height: 220px;
+$-office-lamp-image: 'sprite.png';
+$-office-lamp: (73px, 81px, -73px, -81px, 73px, 73px, 297px, 220px, 'sprite.png', 'Office Lamp', );
+$-password2-name: 'Password2';
+$-password2-x: 0px;
+$-password2-y: 81px;
+$-password2-offset-x: 0px;
+$-password2-offset-y: -81px;
+$-password2-width: 73px;
+$-password2-height: 74px;
+$-password2-total-width: 297px;
+$-password2-total-height: 220px;
+$-password2-image: 'sprite.png';
+$-password2: (0px, 81px, 0px, -81px, 73px, 74px, 297px, 220px, 'sprite.png', 'Password2', );
+$-sent-name: 'Sent';
+$-sent-x: 159px;
+$-sent-y: 0px;
+$-sent-offset-x: -159px;
+$-sent-offset-y: 0px;
+$-sent-width: 73px;
+$-sent-height: 73px;
+$-sent-total-width: 297px;
+$-sent-total-height: 220px;
+$-sent-image: 'sprite.png';
+$-sent: (159px, 0px, -159px, 0px, 73px, 73px, 297px, 220px, 'sprite.png', 'Sent', );
+$arrow-name: 'arrow';
+$arrow-x: 261px;
+$arrow-y: 78px;
+$arrow-offset-x: -261px;
+$arrow-offset-y: -78px;
+$arrow-width: 13px;
+$arrow-height: 7px;
+$arrow-total-width: 297px;
+$arrow-total-height: 220px;
+$arrow-image: 'sprite.png';
+$arrow: (261px, 78px, -261px, -78px, 13px, 7px, 297px, 220px, 'sprite.png', 'arrow', );
+$behance-name: 'behance';
+$behance-x: 232px;
+$behance-y: 86px;
+$behance-offset-x: -232px;
+$behance-offset-y: -86px;
+$behance-width: 17px;
+$behance-height: 11px;
+$behance-total-width: 297px;
+$behance-total-height: 220px;
+$behance-image: 'sprite.png';
+$behance: (232px, 86px, -232px, -86px, 17px, 11px, 297px, 220px, 'sprite.png', 'behance', );
+$calendar-name: 'calendar';
+$calendar-x: 232px;
+$calendar-y: 97px;
+$calendar-offset-x: -232px;
+$calendar-offset-y: -97px;
+$calendar-width: 13px;
+$calendar-height: 13px;
+$calendar-total-width: 297px;
+$calendar-total-height: 220px;
+$calendar-image: 'sprite.png';
+$calendar: (232px, 97px, -232px, -97px, 13px, 13px, 297px, 220px, 'sprite.png', 'calendar', );
+$coffee-name: 'coffee';
+$coffee-x: 130px;
+$coffee-y: 155px;
+$coffee-offset-x: -130px;
+$coffee-offset-y: -155px;
+$coffee-width: 65px;
+$coffee-height: 65px;
+$coffee-total-width: 297px;
+$coffee-total-height: 220px;
+$coffee-image: 'sprite.png';
+$coffee: (130px, 155px, -130px, -155px, 65px, 65px, 297px, 220px, 'sprite.png', 'coffee', );
+$facebook-name: 'facebook';
+$facebook-x: 232px;
+$facebook-y: 110px;
+$facebook-offset-x: -232px;
+$facebook-offset-y: -110px;
+$facebook-width: 9px;
+$facebook-height: 17px;
+$facebook-total-width: 297px;
+$facebook-total-height: 220px;
+$facebook-image: 'sprite.png';
+$facebook: (232px, 110px, -232px, -110px, 9px, 17px, 297px, 220px, 'sprite.png', 'facebook', );
+$pencil-name: 'pencil';
+$pencil-x: 278px;
+$pencil-y: 65px;
+$pencil-offset-x: -278px;
+$pencil-offset-y: -65px;
+$pencil-width: 15px;
+$pencil-height: 13px;
+$pencil-total-width: 297px;
+$pencil-total-height: 220px;
+$pencil-image: 'sprite.png';
+$pencil: (278px, 65px, -278px, -65px, 15px, 13px, 297px, 220px, 'sprite.png', 'pencil', );
+$photos-name: 'photos';
+$photos-x: 232px;
+$photos-y: 0px;
+$photos-offset-x: -232px;
+$photos-offset-y: 0px;
+$photos-width: 65px;
+$photos-height: 65px;
+$photos-total-width: 297px;
+$photos-total-height: 220px;
+$photos-image: 'sprite.png';
+$photos: (232px, 0px, -232px, 0px, 65px, 65px, 297px, 220px, 'sprite.png', 'photos', );
+$quotes-name: 'quotes';
+$quotes-x: 232px;
+$quotes-y: 65px;
+$quotes-offset-x: -232px;
+$quotes-offset-y: -65px;
+$quotes-width: 29px;
+$quotes-height: 21px;
+$quotes-total-width: 297px;
+$quotes-total-height: 220px;
+$quotes-image: 'sprite.png';
+$quotes: (232px, 65px, -232px, -65px, 29px, 21px, 297px, 220px, 'sprite.png', 'quotes', );
+$responsive-name: 'responsive';
+$responsive-x: 65px;
+$responsive-y: 155px;
+$responsive-offset-x: -65px;
+$responsive-offset-y: -155px;
+$responsive-width: 65px;
+$responsive-height: 65px;
+$responsive-total-width: 297px;
+$responsive-total-height: 220px;
+$responsive-image: 'sprite.png';
+$responsive: (65px, 155px, -65px, -155px, 65px, 65px, 297px, 220px, 'sprite.png', 'responsive', );
+$retina-name: 'retina';
+$retina-x: 0px;
+$retina-y: 155px;
+$retina-offset-x: 0px;
+$retina-offset-y: -155px;
+$retina-width: 65px;
+$retina-height: 65px;
+$retina-total-width: 297px;
+$retina-total-height: 220px;
+$retina-image: 'sprite.png';
+$retina: (0px, 155px, 0px, -155px, 65px, 65px, 297px, 220px, 'sprite.png', 'retina', );
+$twitter-name: 'twitter';
+$twitter-x: 261px;
+$twitter-y: 65px;
+$twitter-offset-x: -261px;
+$twitter-offset-y: -65px;
+$twitter-width: 17px;
+$twitter-height: 13px;
+$twitter-total-width: 297px;
+$twitter-total-height: 220px;
+$twitter-image: 'sprite.png';
+$twitter: (261px, 65px, -261px, -65px, 17px, 13px, 297px, 220px, 'sprite.png', 'twitter', );
+$spritesheet-width: 297px;
+$spritesheet-height: 220px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($-compas, $-design, $-engineering, $-office-lamp, $-password2, $-sent, $arrow, $behance, $calendar, $coffee, $facebook, $pencil, $photos, $quotes, $responsive, $retina, $twitter, );
+$spritesheet: (297px, 220px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../img/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'baron_neueregular';
+    src: url('fonts/BaronNeue/baron_neue-webfont.eot');
+    src: url('fonts/BaronNeue/baron_neue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BaronNeue/baron_neue-webfont.woff2') format('woff2'),
+         url('fonts/BaronNeue/baron_neue-webfont.woff') format('woff'),
+         url('fonts/BaronNeue/baron_neue-webfont.ttf') format('truetype'),
+         url('fonts/BaronNeue/baron_neue-webfont.svg#baron_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'baron_neue_bold';
+    src: url('fonts/BaronNeueBold/baron_neue_bold-webfont.eot');
+    src: url('fonts/BaronNeueBold/baron_neue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BaronNeueBold/baron_neue_bold-webfont.woff2') format('woff2'),
+         url('fonts/BaronNeueBold/baron_neue_bold-webfont.woff') format('woff'),
+         url('fonts/BaronNeueBold/baron_neue_bold-webfont.ttf') format('truetype'),
+         url('fonts/BaronNeueBold/baron_neue_bold-webfont.svg#baron_neue_boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$baronneue: 'baron_neueregular',sans-serif;
+$baronneuebold: 'baron_neue_bold', sans-serif;
